@@ -44,23 +44,6 @@ def user_authentication(tx, username, password):
 
 
 
-# with driver.session() as driver_session:
-#     username =  "Nicer"
-#     password= "svhsvjhvs"
-#     flag_check_username = driver_session.read_transaction(check_username_existence, username)
-#     if flag_check_username:
-#         driver_session.write_transaction(create_account, username, password)
-#     else:
-#         print("Sorry username is already taken")
-#     auth_check = driver_session.read_transaction(user_authentication, username, password)
-#     if auth_check:
-#         print("Logged in successfully")
-#     else:
-#         print("Try again :(")
-    # print("Done")
-
-
-# driver.close()
 
 
 @app.route('/', methods=['GET', 'POST'])
